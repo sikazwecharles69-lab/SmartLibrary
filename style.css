@@ -59,9 +59,11 @@ nav a {
   font-weight: 700;
   color: #53657a;
   border-radius: 6px;
+  transition: all 0.2s ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
   background: #edf5ff;
   color: #123b5b;
 }

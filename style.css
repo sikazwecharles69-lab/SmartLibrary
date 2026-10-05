@@ -500,3 +500,21 @@ main {
     padding: 6px 8px;
   }
 }
+
+/* SSL-13: mobile menu */
+.menu-button {
+  display: none;
+  background: transparent;
+  color: inherit;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-button { display: block; }
+  header nav ul { display: none; flex-direction: column; }
+  header nav.open ul { display: flex; }
+}
